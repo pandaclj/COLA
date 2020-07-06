@@ -12,6 +12,8 @@ import java.util.Map;
 /**
  * TransitionBuilderImpl
  *
+ * 过渡链
+ *
  * @author Frank Zhang
  * @date 2020-02-07 10:20 PM
  */

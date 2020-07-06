@@ -31,11 +31,11 @@ public class StateMachineImpl<S,E,C> implements StateMachine<S, E, C> {
     }
 
     public S fireEvent(S sourceStateId, E event, C ctx){
-        isReady();
+        isReady(); //判断状态机的状态
         State sourceState = getState(sourceStateId);
         return doTransition(sourceState, event, ctx).getId();
     }
-
+    //执行过渡
     private State<S, E, C> doTransition(State sourceState, E event, C ctx) {
         Optional<Transition<S,E,C>> transition = sourceState.getTransition(event);
         if(transition.isPresent()){
