@@ -2,6 +2,7 @@ package com.alibaba.cola.statemachine;
 
 /**
  * StateMachine
+ * 状态机
  *
  * @author Frank Zhang
  *
